@@ -32,6 +32,10 @@ render.experimental.xml
 
 # Google Services (e.g. APIs or Firebase)
 google-services.json
+# IOS Services (e.g. APIs or Firebase)
+GoogleService-Info.plist
+Info.plist
+
 
 # Android Profiling
 *.hprof
@@ -78,6 +82,8 @@ doc/api/
 .idea
 **/node_modules/*
 **/.firebaserc
+firebase.json
+firebase_options.dart
 
 ### Firebase Patch ###
 .runtimeconfig.json
