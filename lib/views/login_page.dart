@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_sign_in/google_sign_in.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -8,19 +7,24 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Column(
-          spacing: 10,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              'Login',
-              style: TextStyle(fontSize: 30),
-            ),
-            ElevatedButton(
-              onPressed: () async => GoogleSignIn().signIn(),
-              child: Text('google login'),
-            ),
-          ],
+        child: Padding(
+          padding: const EdgeInsets.all(30.0),
+          child: Column(
+            spacing: 10,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                'Login',
+                style: TextStyle(fontSize: 30),
+              ),
+              TextField(),
+              TextField(),
+              ElevatedButton(
+                onPressed: () {},
+                child: Text('login'),
+              ),
+            ],
+          ),
         ),
       ),
     );
